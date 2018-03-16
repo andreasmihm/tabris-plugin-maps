@@ -27,7 +27,7 @@ The Tabris.js website provides detailed information on how to [integrate custom 
 The plugin should be added as an entry in the apps `config.xml` file:
 
 ```xml
-<plugin name="tabris-plugin-maps" spec="3.0.0" />
+<plugin name="tabris-plugin-maps" spec="^4.0.0" />
 ```
 
 To fetch the latest development version use the GitHub url:
@@ -43,7 +43,7 @@ On Android a Google Maps API key has to be provided when adding the plugin to yo
 The API key can be configured inside your app's `config.xml`:
 
 ```xml
-<plugin name="tabris-plugin-maps" spec="3.0.0">
+<plugin name="tabris-plugin-maps" spec="^4.0.0">
   <variable name="ANDROID_API_KEY" value="$ANDROID_API_KEY" />
 </plugin>
 ```
@@ -219,6 +219,10 @@ A `Marker` is used to indicate places and positions on the Map.
 
 * The current position of the marker if set. The position is an array consisting of latitude and longitude: E.g. `[48.8644458, 2.3589976]`
 
+##### `image` : _Image_
+
+* Image to be shown instead of the standard marker image.
+
 #### Events
 
 ##### `tap`
@@ -233,7 +237,7 @@ A `Marker` is used to indicate places and positions on the Map.
 
 ## Compatibility
 
-Compatible with [Tabris.js 2.0.0](https://github.com/eclipsesource/tabris-js/releases/tag/v2.0.0)
+Compatible with [Tabris.js 2.2.0](https://github.com/eclipsesource/tabris-js/releases/tag/v2.2.0)
 
 ## Development of the widget
 

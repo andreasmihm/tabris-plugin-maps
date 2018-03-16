@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="tabris-plugin-maps"
-        version="3.0.0">
+        version="4.0.1">
 
   <name>Tabris.js Maps Plugin</name>
   <description>A maps widget for Tabris.js. It is based on Google Maps on Android and MapKit on iOS.</description>
@@ -48,7 +48,7 @@
       <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     </config-file>
 
-    <framework src="com.google.android.gms:play-services-maps:10.2.1" />
+    <framework src="com.google.android.gms:play-services-maps:11.8.0" />
 
     <source-file src="src/android/com/eclipsesource/tabris/maps/MapHolderView.java"
                  target-dir="src/com/eclipsesource/tabris/maps" />
@@ -88,6 +88,7 @@
     <source-file src="src/ios/ESMap.m" />
     <header-file src="src/ios/ESMarker.h" />
     <source-file src="src/ios/ESMarker.m" />
+    <header-file src="src/ios/UIImageView+Tabris.h" />
 
     <!-- Required frameworks -->
     <framework src="MapKit.framework" />
